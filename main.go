@@ -113,6 +113,6 @@ func convertToMilliliters(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/calculate", calculate)
 	http.HandleFunc("/convertToMilliliters", convertToMilliliters)
-	fmt.Println("Servidor rodando na porta 8080")
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Servidor rodando na porta 5050")
+	http.ListenAndServe(":5050", nil)
 }
